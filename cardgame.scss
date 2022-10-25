@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: calc(50% - 512px);
+    padding-right: calc(50% - 512px);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #004980;
+    display: flex;
+    justify-content: center;
+    padding-top: 158px;
+    font-family: 'StratosSkyeng';
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.game {
+    background-color: #C2F5FF;
+    width: 480px;
+    height: 459px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+
+    &__level {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: #004980;
+
+        &_button {
+            height: 98px;
+            width: 98px;
+            background-color: white;
+            border-radius: 12px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 72px;
+            color: #0080C1;
+            border-style: none;
+            transition: all .3s;
+        }
+
+        &_button:hover {
+            box-shadow: 0 0 10px #0080C1;
+        }
+
+
+        &_buttons {
+            display: flex;
+            gap: 26px;
+        }
+    }
+
+    &__start {
+        margin-top: 16px;
+        height: 50px;
+        width: 246px;
+        background: #7AC100;
+        border-radius: 12px;
+        border-style: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: white;
+        transition: all .3s;
+    }
+
+    &__start:hover {
+        transform: scale(1.05);
+    }
+}
