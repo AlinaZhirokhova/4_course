@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "StratosSkyeng";
+  src: url(stratosskyengweb-regular.woff);
+  src: url(stratosskyengweb-regular.woff2);
+}
 .center {
   padding-left: calc(50% - 512px);
   padding-right: calc(50% - 512px);
@@ -54,9 +59,10 @@ body {
   color: #0080C1;
   border-style: none;
   transition: all 0.3s;
+  font-family: "StratosSkyeng";
 }
 .game__level_button:hover {
-  box-shadow: 0 0 10px #0080C1;
+  box-shadow: 0 0 7px #0080C1;
 }
 .game__level_buttons {
   display: flex;
@@ -75,7 +81,17 @@ body {
   line-height: 32px;
   color: white;
   transition: all 0.3s;
+  font-family: "StratosSkyeng";
 }
 .game__start:hover {
   transform: scale(1.05);
+}
+
+.focus {
+  border: 3px solid #0080C1;
+  box-shadow: 0 0 0;
+}
+
+.focus:hover {
+  box-shadow: 0 0 0;
 }/*# sourceMappingURL=cardgame.css.map */
