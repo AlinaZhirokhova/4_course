@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: StratosSkyeng;
+  src: url "stratosskyengweb-regular.woff";
+  src: url(stratosskyengweb-regular.woff2);
+}
+.center {
+  padding-left: calc(50% - 490px);
+  padding-right: calc(50% - 490px);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #004980;
+  display: flex;
+  justify-content: center;
+  font-family: StratosSkyeng;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.game {
+  background-color: #c2f5ff;
+  width: 480px;
+  height: 459px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin-top: 158px;
+}
+.game__level {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #004980;
+}
+.game__level_button {
+  height: 98px;
+  width: 98px;
+  background-color: white;
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #0080c1;
+  border-style: none;
+  transition: all 0.3s;
+  font-family: StratosSkyeng;
+}
+.game__level_button:hover {
+  box-shadow: 0 0 7px #0080c1;
+}
+.game__level_buttons {
+  display: flex;
+  gap: 26px;
+}
+.game__start {
+  margin-top: 16px;
+  height: 50px;
+  width: 246px;
+  background: #7ac100;
+  border-radius: 12px;
+  border-style: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+  transition: all 0.3s;
+  font-family: StratosSkyeng;
+}
+.game__start:hover {
+  transform: scale(1.05);
+}
+.game__card {
+  display: flex;
+  gap: 21px;
+  flex-wrap: wrap;
+}
+
+.focus {
+  border: 3px solid #0080c1;
+  box-shadow: 0 0 0;
+}
+
+.focus:hover {
+  box-shadow: 0 0 0;
+}
+
+.card {
+  height: 133px;
+  width: 95px;
+}
+
+.gameprocess {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 22px;
+}
+.gameprocess__stopwatch_timer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #fff;
+}
+.gameprocess__stopwatch_units {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+.gameprocess__stopwatch_units-sek {
+  margin-left: 53px;
+  margin-right: 3px;
+}
+.gameprocess__button_start {
+  width: 246px;
+  height: 48px;
+  background-color: #7ac100;
+  color: #fff;
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  border-style: none;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+.gameprocess__button_start:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=cardgame.css.map */
