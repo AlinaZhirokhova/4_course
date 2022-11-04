@@ -19,11 +19,15 @@ a {
 }
 
 body {
+    font-family: StratosSkyeng;
     background-color: #004980;
     display: flex;
     justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
     font-weight: normal;
     font-style: normal;
+    
 }
 
 .game {
@@ -48,6 +52,7 @@ body {
         color: #004980;
 
         &_button {
+            font-family: StratosSkyeng;
             height: 98px;
             width: 98px;
             background-color: white;
@@ -72,6 +77,7 @@ body {
     }
 
     &__start {
+        font-family: StratosSkyeng;
         margin-top: 16px;
         height: 50px;
         width: 246px;
@@ -91,9 +97,11 @@ body {
     }
 
     &__card {
-        display: flex;
-        gap: 21px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
         flex-wrap: wrap;
+        gap: 21px;
+        margin-top: 32px;
     }
 }
 
@@ -118,6 +126,8 @@ body {
     align-items: center;
     width: 100%;
     margin-top: 22px;
+    align-items: flex-end;
+
 
     &__stopwatch {
         &_timer {
@@ -126,6 +136,7 @@ body {
             font-size: 64px;
             line-height: 72px;
             color: #fff;
+            
         }
 
         &_units {
@@ -136,6 +147,7 @@ body {
             color: #fff;
             display: flex;
             justify-content: flex-end;
+            margin-bottom: -10px;
         }
 
         &_units-sek {
@@ -156,6 +168,7 @@ body {
         border-style: none;
         border-radius: 12px;
         transition: all 0.3s;
+        margin-bottom: 14px;
     }
 
     &__button_start:hover {

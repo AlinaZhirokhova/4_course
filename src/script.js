@@ -7,6 +7,8 @@ const buttonStart = document.querySelector('.game__start')
 const gameLevelButton1 = document.querySelector('.game__level_button1')
 const gameLevelButton2 = document.querySelector('.game__level_button2')
 const gameLevelButton3 = document.querySelector('.game__level_button3')
+const menu = document.querySelector('.menu')
+body.appendChild(menu)
 const gameCard = document.createElement('div')
 gameCard.classList.add('game__card')
 const gameProcess = document.querySelector('.gameprocess')
@@ -30,11 +32,6 @@ function addFocus(element1, element2, element3) {
 buttonStart.addEventListener('click', getLevelDifficulty)
 
 function getLevelDifficulty() {
-    body.textContent = ''
-    body.appendChild(gameCard)
-    body.appendChild(gameProcess)
-    gameProcess.classList.remove('hidden')
-
     if (gameLevelButton1.classList.contains('focus')) {
         for (let i = 0; i < 6; i++) {
             getFieldCard()
@@ -51,9 +48,12 @@ function getLevelDifficulty() {
 }
 
 function getFieldCard() {
+    body.textContent = ''
     const card = document.createElement('img')
     card.src = 'shirt.png'
     card.classList.add('card')
-
+    body.appendChild(gameCard)
     gameCard.appendChild(card)
+    gameProcess.classList.remove('hidden')
+    body.appendChild(gameProcess)
 }

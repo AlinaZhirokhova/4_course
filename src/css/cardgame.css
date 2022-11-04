@@ -5,8 +5,8 @@
 
 @font-face {
   font-family: StratosSkyeng;
-  src: url "stratosskyengweb-regular.woff";
-  src: url(stratosskyengweb-regular.woff2);
+  src: url("stratosskyengweb-regular.woff");
+  src: url("stratosskyengweb-regular.woff2");
 }
 .center {
   padding-left: calc(50% - 490px);
@@ -18,10 +18,12 @@ a {
 }
 
 body {
+  font-family: StratosSkyeng;
   background-color: #004980;
   display: flex;
   justify-content: center;
-  font-family: StratosSkyeng;
+  flex-direction: column-reverse;
+  align-items: center;
   font-weight: normal;
   font-style: normal;
 }
@@ -48,6 +50,7 @@ body {
   color: #004980;
 }
 .game__level_button {
+  font-family: StratosSkyeng;
   height: 98px;
   width: 98px;
   background-color: white;
@@ -59,7 +62,6 @@ body {
   color: #0080c1;
   border-style: none;
   transition: all 0.3s;
-  font-family: StratosSkyeng;
 }
 .game__level_button:hover {
   box-shadow: 0 0 7px #0080c1;
@@ -69,6 +71,7 @@ body {
   gap: 26px;
 }
 .game__start {
+  font-family: StratosSkyeng;
   margin-top: 16px;
   height: 50px;
   width: 246px;
@@ -81,15 +84,16 @@ body {
   line-height: 32px;
   color: white;
   transition: all 0.3s;
-  font-family: StratosSkyeng;
 }
 .game__start:hover {
   transform: scale(1.05);
 }
 .game__card {
-  display: flex;
-  gap: 21px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   flex-wrap: wrap;
+  gap: 21px;
+  margin-top: 32px;
 }
 
 .focus {
@@ -113,6 +117,7 @@ body {
   align-items: center;
   width: 100%;
   margin-top: 22px;
+  align-items: flex-end;
 }
 .gameprocess__stopwatch_timer {
   font-style: normal;
@@ -129,6 +134,7 @@ body {
   color: #fff;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: -10px;
 }
 .gameprocess__stopwatch_units-sek {
   margin-left: 53px;
@@ -139,7 +145,6 @@ body {
   height: 48px;
   background-color: #7ac100;
   color: #fff;
-  font-family: StratosSkyeng;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -147,6 +152,7 @@ body {
   border-style: none;
   border-radius: 12px;
   transition: all 0.3s;
+  margin-bottom: 14px;
 }
 .gameprocess__button_start:hover {
   transform: scale(1.05);
