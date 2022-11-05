@@ -18,7 +18,7 @@ a {
 }
 
 body {
-  font-family: StratosSkyeng;
+  font-family: StratosSkyeng, sans-serif;
   background-color: #004980;
   display: flex;
   justify-content: center;
@@ -50,7 +50,7 @@ body {
   color: #004980;
 }
 .game__level_button {
-  font-family: StratosSkyeng;
+  font-family: StratosSkyeng, sans-serif;
   height: 98px;
   width: 98px;
   background-color: white;
@@ -71,7 +71,7 @@ body {
   gap: 26px;
 }
 .game__start {
-  font-family: StratosSkyeng;
+  font-family: StratosSkyeng, sans-serif;
   margin-top: 16px;
   height: 50px;
   width: 246px;
@@ -117,7 +117,6 @@ body {
   align-items: center;
   width: 100%;
   margin-top: 22px;
-  align-items: flex-end;
 }
 .gameprocess__stopwatch_timer {
   font-style: normal;

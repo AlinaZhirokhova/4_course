@@ -57,3 +57,49 @@ function getFieldCard() {
     gameProcess.classList.remove('hidden')
     body.appendChild(gameProcess)
 }
+const fieldCard = document.querySelector('.field__card')
+const arrCard = [
+    'src/images/1.png',
+    'src/images/2.png',
+    'src/images/3.png',
+    'src/images/4.png',
+    'src/images/5.png',
+    'src/images/6.png',
+    'src/images/7.png',
+    'src/images/8.png',
+    'src/images/9.png',
+    'src/images/10.png',
+    'src/images/11.png',
+    'src/images/12.png',
+    'src/images/13.png',
+    'src/images/14.png',
+    'src/images/15.png',
+    'src/images/16.png',
+    'src/images/17.png',
+    'src/images/18.png',
+    'src/images/19.png',
+    'src/images/20.png',
+    'src/images/21.png',
+    'src/images/22.png',
+    'src/images/23.png',
+    'src/images/24.png',
+    'src/images/25.png',
+    'src/images/26.png',
+    'src/images/27.png',
+    'src/images/28.png',
+    'src/images/29.png',
+    'src/images/30.png',
+    'src/images/31.png',
+    'src/images/32.png',
+    'src/images/33.png',
+    'src/images/34.png',
+    'src/images/35.png',
+    'src/images/36.png',
+]
+
+arrCard.forEach((i) => {
+    let img = document.createElement('img')
+    img.setAttribute('src', i)
+    fieldCard.appendChild(img)
+})
+fieldCard.classList.add('hidden')
