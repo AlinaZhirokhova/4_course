@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Карточная игра</title>
+        <link rel="stylesheet" href="css/cardgame.css" />
+    </head>
+    <body class="field center">
+        <div class="gameprocess">
+            <div class="gameprocess__stopwatch">
+                <div class="gameprocess__stopwatch_units">
+                    <h3>min</h3>
+                    <h3 class="gameprocess__stopwatch_units-sek">sek</h3>
+                </div>
+                <h2 class="gameprocess__stopwatch_timer">00.00</h2>
+            </div>
+            <div class="gameprocess__button">
+                <button class="gameprocess__button_start">Начать заново</button>
+            </div>
+        </div>
+        <div class="field__card game__card"></div>
+        <script>
+            const fieldCard = document.querySelector('.field__card')
+            const arrCard = [
+                'static/1.png',
+                'static/2.png',
+                'static/3.png',
+                'static/4.png',
+                'static/5.png',
+                'static/6.png',
+                'static/7.png',
+                'static/8.png',
+                'static/9.png',
+                'static/10.png',
+                'static/11.png',
+                'static/12.png',
+                'static/13.png',
+                'static/14.png',
+                'static/15.png',
+                'static/16.png',
+                'static/17.png',
+                'static/18.png',
+                'static/19.png',
+                'static/20.png',
+                'static/21.png',
+                'static/22.png',
+                'static/23.png',
+                'static/24.png',
+                'static/25.png',
+                'static/26.png',
+                'static/27.png',
+                'static/28.png',
+                'static/29.png',
+                'static/30.png',
+                'static/31.png',
+                'static/32.png',
+                'static/33.png',
+                'static/34.png',
+                'static/35.png',
+                'static/36.png',
+            ]
+
+            arrCard.forEach((i) => {
+                let img = document.createElement('img')
+                img.setAttribute('src', i)
+                fieldCard.appendChild(img)
+            })
+        </script>
+    </body>
+</html>

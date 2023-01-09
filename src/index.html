@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Карточная игра</title>
-        <link rel="stylesheet" href="src/css/cardgame.css" />
+        <link rel="stylesheet" href="main.css" />
     </head>
 
     <body class="body center">
@@ -15,7 +15,7 @@
                     <h3>min</h3>
                     <h3 class="gameprocess__stopwatch_units-sek">sek</h3>
                 </div>
-                <h2 class="gameprocess__stopwatch_timer">00.00</h2>
+                <span class="gameprocess__stopwatch_timer min">00</span><span class="gameprocess__stopwatch_timer">.</span><span class="gameprocess__stopwatch_timer sec">00</span>
             </div>
             <div class="gameprocess__button">
                 <button class="gameprocess__button_start">Начать заново</button>
@@ -23,7 +23,7 @@
         </div>
         <div class="menu">
             <div class="game center">
-            <h2 class="game__level">Выбери<br />сложность</h2>
+            <h2 class="game__level">Выбери<br/>сложность</h2>
             <div class="game__level_buttons">
                 <button class="game__level_button game__level_button1">
                     1
@@ -37,12 +37,8 @@
             </div>
             <button class="game__start">Старт</button>
         </div>
-        <div class="field__card game__card">
+        <div class="field__card game__card hidden">
         </div>
-        
-
-        
-
-        <script src="src/script.js"></script>
+        <script src="script.ts"></script>
     </body>
 </html>

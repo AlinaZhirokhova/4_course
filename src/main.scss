@@ -1,3 +1,11 @@
+$font-size: 1rem;
+$font-color: lch(28 99 35);
+
+html {
+    font-size: $font-size;
+    color: $font-color;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -21,9 +29,9 @@ a {
 .body {
     font-family: StratosSkyeng, sans-serif;
     background-color: #004980;
+    height: 100vh;
     display: flex;
-    justify-content: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     font-weight: normal;
     font-style: normal;
@@ -41,6 +49,10 @@ a {
     align-items: center;
     gap: 48px;
     margin-top: 158px;
+
+    &__absolute {
+        position: absolute;
+    }
 
     &__level {
         font-style: normal;
@@ -114,6 +126,10 @@ a {
 }
 
 .card {
+    background-image: url('static/shirt.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 133px;
     width: 95px;
 }
@@ -172,11 +188,7 @@ a {
     }
 }
 
-.hidden {
-    display: none;
-}
-
-.field{
+.field {
     font-family: StratosSkyeng, sans-serif;
     background-color: #004980;
     display: flex;
@@ -193,5 +205,59 @@ a {
         gap: 21px;
         margin-top: 32px;
     }
+}
 
+.hidden {
+    display: none;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: #004980;
+    opacity: 0.9;
+}
+
+.result {
+    &__game {
+        background-color: #c2f5ff;
+        width: 480px;
+        height: 459px;
+        border-radius: 12px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        align-items: center;
+        margin-top: 158px;
+    }
+    &__img {
+        width: 96px;
+        height: 96px;
+        margin-bottom: 5px;
+    }
+
+    &__time {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: #000000;
+        margin-top: 28px;
+        margin-bottom: 10px;
+
+        &_timer {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 72px;
+            color: #000000;
+            margin-bottom: 24px;
+        }
+    }
 }

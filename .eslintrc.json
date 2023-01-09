@@ -8,8 +8,10 @@
       "plugins": [
         "prettier"
       ],
+      "parser": "@babel/eslint-parser",
       "parserOptions": {
-        "ecmaVersion": 2020
+        "ecmaVersion": 2018,
+        "sourceType": "module"
       },
       "rules": {
         "prettier/prettier": "error",
