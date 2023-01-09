@@ -1,5 +1,5 @@
 $font-size: 1rem;
-$font-color: lch(28 99 35);
+$font-color: lch(28 99 35deg);
 
 html {
     font-size: $font-size;
@@ -236,6 +236,7 @@ a {
         align-items: center;
         margin-top: 158px;
     }
+
     &__img {
         width: 96px;
         height: 96px;
@@ -247,7 +248,7 @@ a {
         font-weight: 400;
         font-size: 24px;
         line-height: 32px;
-        color: #000000;
+        color: #000;
         margin-top: 28px;
         margin-bottom: 10px;
 
@@ -256,7 +257,7 @@ a {
             font-weight: 400;
             font-size: 64px;
             line-height: 72px;
-            color: #000000;
+            color: #000;
             margin-bottom: 24px;
         }
     }

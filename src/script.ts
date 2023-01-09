@@ -1,7 +1,10 @@
 import './main.scss'
 
 declare global {
-    interface Window { game: any; }
+    // eslint-disable-next-line no-unused-vars
+    interface Window {
+        game: any
+    }
 }
 
 window.game = {
@@ -19,14 +22,22 @@ window.game = {
     buttonOver: undefined,
 }
 
-const body = document.querySelector('body')  as HTMLBodyElement
+const body = document.querySelector('body') as HTMLBodyElement
 const buttonStart = document.querySelector('.game__start') as HTMLElement
-const gameLevelButton1 = document.querySelector('.game__level_button1') as HTMLElement
-const gameLevelButton2 = document.querySelector('.game__level_button2') as HTMLElement
-const gameLevelButton3 = document.querySelector('.game__level_button3') as HTMLElement
+const gameLevelButton1 = document.querySelector(
+    '.game__level_button1'
+) as HTMLElement
+const gameLevelButton2 = document.querySelector(
+    '.game__level_button2'
+) as HTMLElement
+const gameLevelButton3 = document.querySelector(
+    '.game__level_button3'
+) as HTMLElement
 const menu = document.querySelector('.menu') as HTMLElement
 const gameProcess = document.querySelector('.gameprocess') as HTMLElement
-const buttonStartOver = document.querySelector('.gameprocess__button_start') as HTMLElement
+const buttonStartOver = document.querySelector(
+    '.gameprocess__button_start'
+) as HTMLElement
 let gameCard = document.createElement('div') as HTMLDivElement
 gameProcess.appendChild(buttonStartOver)
 body.appendChild(menu)
@@ -82,7 +93,11 @@ gameLevelButton3.addEventListener('click', () =>
     addFocus(gameLevelButton3, gameLevelButton2, gameLevelButton1)
 )
 
-function addFocus(element1: HTMLElement, element2: HTMLElement, element3: HTMLElement) {
+function addFocus(
+    element1: HTMLElement,
+    element2: HTMLElement,
+    element3: HTMLElement
+) {
     element1.classList.add('focus')
     element2.classList.remove('focus')
     element3.classList.remove('focus')
@@ -130,7 +145,7 @@ function getOpenCard(a: Number) {
     array = array.concat(array)
     array.sort(() => Math.random() - 0.5)
     shuffle(array)
-    
+
     const arrayFront: Array<HTMLImageElement> = []
 
     array.forEach((i) => {
@@ -145,14 +160,13 @@ function getOpenCard(a: Number) {
         card.appendChild(cardFront)
         arrayFront.push(cardFront)
 
-        const pairCard: Array<HTMLImageElement>  = []
+        const pairCard: Array<HTMLImageElement> = []
         card.addEventListener('click', (e) => {
             const target = e.target as HTMLElement
             const arr = arrayFront.map((item) => item.classList.value)
             if (!arr.includes('card')) {
                 start()
             }
-
             let clicks = Number(gameCard.dataset.clicks)
             clicks += 1
             gameCard.dataset.clicks = String(clicks as number)
@@ -166,6 +180,7 @@ function getOpenCard(a: Number) {
 
             if (clicks === 1) {
                 target.classList.remove('opacity')
+
                 window.game.target = target
             }
 
@@ -268,8 +283,9 @@ function resultGame(picture: string, message: string) {
     resultGameScreen.appendChild(buttonOver)
 }
 
+// eslint-disable-next-line no-undef
 let x: string | number | NodeJS.Timeout | undefined
-let sec: number  = 0
+let sec: number = 0
 let min: number = 0
 let secOut: string | number = 0
 let minOut: string | number = 0
@@ -304,7 +320,7 @@ function timer() {
     b.innerHTML = minOut as string
 }
 
-function checkTime(i: string | number ) {
+function checkTime(i: string | number) {
     if (i < 10) {
         i = '0' + i
     }

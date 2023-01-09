@@ -13,6 +13,7 @@ html {
   src: url("stratosskyengweb-regular.woff");
   src: url("stratosskyengweb-regular.woff2");
 }
+
 .center {
   padding-left: calc(50% - 490px);
   padding-right: calc(50% - 490px);
@@ -46,9 +47,11 @@ a {
   gap: 48px;
   margin-top: 158px;
 }
+
 .game__absolute {
   position: absolute;
 }
+
 .game__level {
   font-style: normal;
   font-weight: 400;
@@ -57,6 +60,7 @@ a {
   text-align: center;
   color: #004980;
 }
+
 .game__level_button {
   font-family: StratosSkyeng, sans-serif;
   height: 98px;
@@ -71,13 +75,16 @@ a {
   border-style: none;
   transition: all 0.3s;
 }
+
 .game__level_button:hover {
   box-shadow: 0 0 7px #0080c1;
 }
+
 .game__level_buttons {
   display: flex;
   gap: 26px;
 }
+
 .game__start {
   font-family: StratosSkyeng, sans-serif;
   margin-top: 16px;
@@ -93,9 +100,11 @@ a {
   color: white;
   transition: all 0.3s;
 }
+
 .game__start:hover {
   transform: scale(1.05);
 }
+
 .game__card {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -130,6 +139,7 @@ a {
   width: 100%;
   margin-top: 22px;
 }
+
 .gameprocess__stopwatch_timer {
   font-style: normal;
   font-weight: 400;
@@ -137,6 +147,7 @@ a {
   line-height: 72px;
   color: #fff;
 }
+
 .gameprocess__stopwatch_units {
   font-style: normal;
   font-weight: 400;
@@ -147,10 +158,12 @@ a {
   justify-content: flex-end;
   margin-bottom: -10px;
 }
+
 .gameprocess__stopwatch_units-sek {
   margin-left: 53px;
   margin-right: 3px;
 }
+
 .gameprocess__button_start {
   width: 246px;
   height: 48px;
@@ -165,6 +178,7 @@ a {
   transition: all 0.3s;
   margin-top: 16px;
 }
+
 .gameprocess__button_start:hover {
   transform: scale(1.05);
 }
@@ -179,6 +193,7 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+
 .field__card {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -215,11 +230,13 @@ a {
   align-items: center;
   margin-top: 158px;
 }
+
 .result__img {
   width: 96px;
   height: 96px;
   margin-bottom: 5px;
 }
+
 .result__time {
   font-style: normal;
   font-weight: 400;
@@ -229,6 +246,7 @@ a {
   margin-top: 28px;
   margin-bottom: 10px;
 }
+
 .result__time_timer {
   font-style: normal;
   font-weight: 400;
@@ -236,4 +254,6 @@ a {
   line-height: 72px;
   color: #000000;
   margin-bottom: 24px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
